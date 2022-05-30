@@ -1,0 +1,33 @@
+.row mt-4 px-5 {
+    margin-top: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.row mb-2 {
+    margin-bottom: 2rem;
+}
+
+.row mb-2 pl-3 {
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+}
+
+.col-6{
+    display: inline-block;
+    width: 50%;
+}
+
+.font-weight-bold{
+    font-weight: bold;
+}
+
+.col-2{
+    display: inline-block;
+    width: 16%;
+}
+
+.col-3{
+    display: inline-block;
+    width: 25%;
+}

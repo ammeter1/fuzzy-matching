@@ -1,0 +1,43 @@
+{% load bootstrap4 %}
+{% bootstrap_css %}
+<h1 class="text-center">Welcome to FuzzyPrep</h1>
+<p class="text-center">Result preview</p>
+<div class="row mt-4 px-5"  style="background-color: powderblue;
+max-width: 95%;
+margin: auto;">
+<div class="col-2">
+    <p class="font-weight-bold">Data_up</p>
+{% for dt in data_top %}
+    <p>{{dt}}</p>
+    {% endfor %}
+</div>
+
+<div class="col-2">
+    <p class="font-weight-bold">Data_down</p>
+    {% for db in data_bottom %}
+    <p>{{db}}</p>
+    {% endfor %}
+</div>
+
+
+<div class="col-3">
+    <p class="font-weight-bold">Score</p>
+    {% for s in score %}
+    <p>{{s}}</p>
+    {% endfor %}
+</div>
+
+<div class="col-2">
+    <p class="font-weight-bold">JW_Score</p>
+    {% for js in jw_scores %}
+    <p>{{js}}</p>
+    {% endfor %}
+</div>
+
+<div class="col-2">
+    <p class="font-weight-bold">Token</p>
+    {% for t in token %}
+    <p>{{t}}</p>
+    {% endfor %}
+</div>
+</div>
