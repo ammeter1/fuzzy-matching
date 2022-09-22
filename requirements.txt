@@ -1,0 +1,8 @@
+django==4.1.1
+importlib==1.0.4
+pandas==1.5.0 
+numpy==1.23.3
+scipy==1.9.1
+scikit-learn==1.1.2
+unicodedata (deprecated, update WIP)
+pyjarowinkler==1.8
