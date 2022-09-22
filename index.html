@@ -1,0 +1,63 @@
+{% load bootstrap4 %}
+{% bootstrap_css %}
+<h1 class="text-center">Welcome to FuzzyPrep</h1>
+<div style="background-color: powderblue;
+max-width: 95%;
+margin: auto;
+">
+    <form enctype="multipart/form-data" action="/fuzzyprep/upload" method="post">
+        {% csrf_token %}
+
+            <div>
+                <div class="row mb-2">
+                    <div class="col-6">
+                        <label>Upload your top file:</label>
+                        {{form.topfile}}
+                    </div>
+                    <div class="col-6">
+                        <label>Upload your bottom file:</label>
+                        {{form.bottomfile}}
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-6">
+                        <label>Enter your top file Sheetname:</label>
+                        {{form.topSheetname}}
+                    </div>
+                    <div class="col-6">
+                        <label>Enter your bottom file Sheetname:</label>
+                        {{form.bottomSheetname}}
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-6">
+                        <label>Enter your top file Delimiter:</label>
+                        {{form.topDelimiter}}
+                    </div>
+                    <div class="col-6">
+                        <label>Enter your bottom file Delimiter:</label>
+                        {{form.bottomDelimiter}}
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-6">
+                        <label>Enter your top data column name:</label>
+                        {{form.topColname}}
+                    </div>
+                    <div class="col-6">
+                        <label>Enter your bottom data column name:</label>
+                        {{form.bottomColname}}
+                    </div>
+                </div>
+                <div class="row mb-2 pl-3">
+                        <label>Enter matching style name(Default, MJS, CSS):</label>
+                        {{form.matchstyle}}
+                </div>
+            </div>
+
+            <input type="submit" value="Submit">
+
+    </form>
+
+
+</div>
